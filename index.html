@@ -1,65 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HealthZone</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/navbarstyle.css">
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+
     <!-- Navbar Section -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Health Zone</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#tips">Tips</a></li>
-                <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+    <nav>    
+      <div class="logo">
+        <a href="#"><img src="https://cdn.pixabay.com/photo/2016/06/09/18/36/logo-1446293_640.png" alt="Logo Image"></a>
+        <div>
+          <a href="#"><span class="health" >HealthZone</span></a>
         </div>
-    </nav>
+      </div>
+      <div class="hamburger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+      </div>
+      <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Health-Tips</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><button class="login-button" href="#">Login</button></li>
+          <li><button class="join-button" href="#">Join</button></li>
+      </ul>
+  </nav>
 
-  <!-- Quote and Image Section -->
-  <section class="quote-section">
-    <div class="container">
-        <h3>Hero Section</h3>
-    </div>
-  </section>
+  <div id="hero-section"></div>
 
-  <!-- Why Health is Important Section -->
-  <section id="why" class="white-section">
-    <div class="container">
+    <!-- Why Health is Important Section -->
+    <section id="why" class="white-section">
+      <div class="container">
         <h3>Why Health is Important Section</h3>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <!-- Health Tips and Resources Section -->
-  <section id="tips" class="colored-section">
-    <div class="container">
+    <!-- Health Tips and Resources Section -->
+    <section id="tips" class="colored-section">
+      <div class="container">
         <h3>Health Tips Section</h3>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <!-- Success Stories Section -->
-  <section id="testimonials" class="white-section">
-    <div class="container">
-      <h3>Testimonials Section</h3>
-    </div>
-  </section>
+    <!-- Success Stories Section -->
+    <section id="testimonials" class="white-section">
+      <div class="container">
+        <h3>Testimonials Section</h3>
+      </div>
+    </section>
 
-  <!-- Footer Section -->
-  <footer id="contact" class="colored-section">
-    <div class="container">
+    <!-- Footer Section -->
+    <footer id="contact" class="colored-section">
+      <div class="container">
         <h3>Footers Section</h3>
-    </div>
-  </footer>
+      </div>
+    </footer>
 
-</body>
+    <script type="text/babel">
+
+      const HeroSection = () => {
+        return (
+          <section className="quote-section" id="title">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-6">
+                  <h1 className="heading">Step up your Healthy Life today.</h1>
+                  <p className="sub-heading">Your journey to wellness begins with us.</p>
+                </div>
+                <div className="col-lg-6">
+                  <img className="title-image" src="images/3_1.png" alt="health-pic"/>
+                </div>
+                <div className="col-sm button-group">
+                  <button type="button" className="btn btn-dark btn-lg custom-button"><i className="my-button"></i> Get Started</button>
+                  <button type="button" className="btn btn-outline-light btn-lg custom-button-outline"><i className="my-button"></i>Learn More</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        );
+      };
+
+      ReactDOM.render(<HeroSection />, document.getElementById('hero-section'));
+
+    </script>
+
+
+    <script src="script.js"></script>
+  </body>
 
 </html>
