@@ -165,6 +165,7 @@ body {
 .section-title {
   color:black;
   margin-bottom: 15px;
+  margin-left: 0px
 }
 
 .section-image {
@@ -229,4 +230,7 @@ body {
 }
 .main{
     color:black;
+}
+.section-description{
+color:black;
 }
