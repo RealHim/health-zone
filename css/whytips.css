@@ -1,0 +1,120 @@
+/* Why Tips Section Styles */
+.why-heading {
+  text-align: center;
+  margin-bottom: 60px;
+  color: black;
+  opacity: 75%;
+}
+
+.accordion .card {
+  margin-bottom: 20px;
+}
+
+.accordion .card-header {
+  background-color: #8DECB4;
+}
+
+.accordion .card-body {
+  display: flex;
+  align-items: center;
+}
+
+.accordion .card-body img.why-image {
+  margin-left: 20px;
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 10px;
+}
+
+/* Adjust button styles if needed */
+.accordion .btn-link {
+  text-decoration: none;
+  font-weight: 700;
+  color: #141E46;
+
+}
+
+.accordion .btn-link:hover {
+  text-decoration: underline;
+}
+
+.description {
+  color: black;
+  opacity: 80%;
+  text-align: justify;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .accordion .card-body {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .accordion .card-body img.why-image {
+      margin-left: 0;
+      margin-top: 20px;
+  }
+}
+
+/* Health Tips Section Styles */
+.tips-heading {
+  text-align: center;
+  margin-bottom: 60px;
+  color: black;
+  opacity: 75%;
+}
+
+.tips-head {
+  color: #141E46;
+}
+
+.tip-box {
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.tip-box h5 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.tip-box p {
+  font-size: 1em;
+  color: #666;
+}
+
+.tip-box:hover {
+  transform: scale(1.05);
+}
+
+.tip-image {
+  width: 140px;
+  height: 140px;
+  margin-top: 2px;
+  align-items: center;
+  object-fit: cover;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-md-6 {
+  flex: 0 0 48%;
+  max-width: 48%;
+}
+
+@media (max-width: 768px) {
+  .col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+}
+

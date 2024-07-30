@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthZone</title>
+    <link rel="icon" href="favicon.ico">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbarstyle.css">
+    <link rel="stylesheet" href="css/slidercopy.css" />
+    <link rel="stylesheet" href="css/whytips.css" />
+    <script src="https://kit.fontawesome.com/4419bed528.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+
+    <!-- Navbar Section -->
+    <nav>    
+      <div class="logo">
+        <a href="#"><img src="https://cdn.pixabay.com/photo/2016/06/09/18/36/logo-1446293_640.png" alt="Logo Image"></a>
+        <div>
+          <a href="#"><span class="health" >HealthZone</span></a>
+        </div>
+      </div>
+      <div class="hamburger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+      </div>
+      <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Health-Tips</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><button class="login-button" href="#">Login</button></li>
+          <li><button class="join-button" href="#">Join</button></li>
+      </ul>
+  </nav>
+
+  <div id="hero-section"></div>
+
+      <!-- Why Health is Important Section -->
+    <section id="why" class="white-section">
+      <div class="container">
+          <h3 class="why-heading">Why Health is Important?</h3>
+          <div class="accordion" id="whyAccordion">
+              <div class="card">
+                  <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Avoid Sickness
+                          </button>
+                      </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#whyAccordion">
+                      <div class="card-body">
+                          <p class="description">Maintaining good health helps prevent chronic diseases and long term illnesses.</p>
+                          <img src="images/sickness.png" alt="Avoid Sickness" class="why-image">
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="card-header" id="headingTwo">
+                      <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Prevent Obesity
+                          </button>
+                      </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#whyAccordion">
+                      <div class="card-body">
+                          <p class="description">Regular exercise and healthy eating habits are key to preventing obesity.</p>
+                          <img src="images/obesity.png" alt="Prevent Obesity" class="why-image">
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Mental Well-being
+                          </button>
+                      </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#whyAccordion">
+                      <div class="card-body">
+                          <p class="description">Good health is not just about physical well-being but also about mental and emotional health.</p>
+                          <img src="images/mental_state.png" alt="Mental Well-being" class="why-image">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- Health Tips Section -->
+<section id="tips" class="colored-section">
+  <div class="container">
+      <h3 class="tips-heading">Health Tips</h3>
+      <div class="row">
+          <div class="col-md-6">
+              <div class="tip-box">
+                  <h5 class="tips-head">Stay Hydrated</h5>
+                  <p>Drinking enough water is crucial for your overall health.</p>
+                  <img src="images/hydrated_2.png" alt="Stay Hydrated" class="tip-image">
+              </div>
+              <div class="tip-box">
+                  <h5 class="tips-head">Regular Exercise</h5>
+                  <p>Engage in physical activities for at least 30 minutes a day.</p>
+                  <img src="images/exercise.png" alt="Regular Exercise" class="tip-image">
+              </div>
+              <div class="tip-box">
+                  <h5 class="tips-head">Balanced Diet</h5>
+                  <p>Ensure your diet includes a variety of nutrients.</p>
+                  <img src="images/balanced.png" alt="Balanced Diet" class="tip-image">
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="tip-box">
+                  <h5 class="tips-head">Get Enough Sleep</h5>
+                  <p>Aim for 7-9 hours of sleep every night.</p>
+                  <img src="images/sleep.png" alt="Get Enough Sleep" class="tip-image">
+              </div>
+              <div class="tip-box">
+                  <h5 class="tips-head">Mental Health</h5>
+                  <p>Practice mindfulness and stress-relief techniques.</p>
+                  <img src="images/mental_health.png" alt="Mental Health" class="tip-image">
+              </div>
+              <div class="tip-box">
+                  <h5 class="tips-head">Avoid Smoking</h5>
+                  <p>Smoking has numerous adverse effects on health. Quit now!</p>
+                  <img src="images/smoking.png" alt="Avoid Smoking" class="tip-image">
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+    <!-- Success Stories Section -->
+    <section id="testimonials" class="white-section">
+      <div class="container-test">
+        <h3 class="testimonial-heading">TESTIMONIALS</h3>
+        <div class="testimonial-underline"></div>
+        <p class="test-text">Have a look at what some of the users say about us</p>
+      </div>
+    <div class="slider">
+        <div class="slider-container">
+            <div class="slide">
+                <div class="slide-content">
+                    <p class="testimonial-text">
+                        Thanks to the personalized health program, I've never felt better. My energy levels have skyrocketed, and I feel more focused and productive every day. The team's support has been invaluable in helping me achieve my health goals.
+                    </p>
+                    <div class="testimonial-info">
+                        <p class="name">Anshit<span class="location">Delhi, India</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <p class="testimonial-text">
+                        After struggling with my health for years, I finally found a program that works. I've lost weight, improved my diet, and feel more vibrant than ever. The holistic approach to well-being has made all the difference.
+                    </p>
+                    <div class="testimonial-info">
+                        <p class="name">Chirag<span class="location">Delhi, India</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <p class="testimonial-text">
+                        Joining this wellness community has been a life-changing experience. The combination of physical activity, healthy eating, and mental health support has transformed my life. I feel healthier and happier than ever.
+                    </p>
+                    <div class="testimonial-info">
+                        <p class="name">Himanshu<span class="location">New Delhi, India</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <p class="testimonial-text">
+                        The well-being program helped me regain control over my health. I've learned how to manage stress, eat better, and stay active. The results have been incredible, and I feel like a new person.
+                    </p>
+                    <div class="testimonial-info">
+                        <p class="name">Aarush<span class="location">Delhi, India</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <p class="testimonial-text">
+                        Thanks to the comprehensive health and wellness plan, I've achieved a balance I never thought possible. The expert guidance and supportive community have empowered me to lead a healthier, more fulfilling life.
+                    </p>
+                    <div class="testimonial-info">
+                        <p class="name">Akanksha<span class="location">Delhi, India</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="colored-section">
+      <footer class="footer-container">
+        <div class="footer-header">
+          <h2 class="footer-title"></h2>
+        </div>
+        <div class="footer-links-container">
+          <div class="footer-links-row">
+            <h3 class="footer-column-title">General Links</h3>
+            <a href="#" class="footer-link">Sustainable Development</a><br>
+            <a href="#" class="footer-link">Good Health & Well Being</a><br>
+            <a href="#" class="footer-link">UN Sustainable Development</a><br>
+            <a href="#" class="footer-link">United Nation : SDG</a>
+          </div>
+          <div class="footer-links-row">
+            <h3 class="footer-column-title">Quick Links</h3>
+            <a href="#" class="footer-link">Introduction</a><br>
+            <a href="#" class="footer-link">Importance</a><br>
+            <a href="#" class="footer-link">Strategies</a><br>
+            <a href="#" class="footer-link">Health Inequities</a><br>
+            <a href="#" class="footer-link">Challenges</a><br>
+            <a href="#" class="footer-link">Solutions</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <i class="social-icon fa-brands fa-facebook"></i>
+          <i class="social-icon fa-brands fa-twitter"></i>
+          <i class="social-icon fa-brands fa-instagram"></i>
+          <i class="social-icon fa-solid fa-envelope"></i>
+          <p class="footer-bottom-text">&copy; 2024 The Rebooters. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </footer>
+
+    <script type="text/babel">
+
+      const HeroSection = () => {
+        return (
+          <section className="quote-section" id="title">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-6">
+                  <h1 className="heading">Step up your Healthy Life today.</h1>
+                  <p className="sub-heading">Your journey to wellness begins with us.</p>
+                </div>
+                <div className="col-lg-6">
+                  <img className="title-image" src="images/3_1.png" alt="health-pic"/>
+                </div>
+                <div className="col-sm button-group">
+                  <button type="button" className="btn btn-dark btn-lg custom-button"><i className="my-button"></i> Get Started</button>
+                  <button type="button" className="btn btn-outline-light btn-lg custom-button-outline"><i className="my-button"></i>Learn More</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        );
+      };
+
+      ReactDOM.render(<HeroSection />, document.getElementById('hero-section'));
+
+    </script>
+
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
