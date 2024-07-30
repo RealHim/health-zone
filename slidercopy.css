@@ -155,6 +155,7 @@ body {
 }
 
 .content-section {
+  color:black;
   margin-bottom: 20px;
   background: #e8f8f5;
   padding: 20px;
@@ -162,6 +163,7 @@ body {
 }
 
 .section-title {
+  color:black;
   margin-bottom: 15px;
 }
 
@@ -177,12 +179,14 @@ body {
 }
 
 .flex-container {
+  color:black;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
 .flex-item {
+  color:black;
   flex: 1 1 45%;
   background: #d1f2eb;
   margin: 10px 0;
@@ -211,6 +215,7 @@ body {
   }
 
   .main-content {
+    color:black;
     padding: 10px;
   }
 
