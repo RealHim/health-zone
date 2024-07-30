@@ -10,7 +10,7 @@ body {
 
 header {
   background: #8decb4;
-  color: white;
+  color: black;
   padding: 1rem 0;
   text-align: center;
 }
@@ -55,7 +55,7 @@ section img {
 
 footer {
   background: #333;
-  color: white;
+  color: black;
   text-align: center;
   padding: 1rem 0;
   position: fixed;
