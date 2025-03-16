@@ -43,7 +43,7 @@
       </ul>
   </nav>
 
-  <div id="hero-section"></div>
+  <div id="hero-section" style="min-height: 500px; display: flex; align-items: center; justify-content: center;"></div>
 
       <!-- Why Health is Important Section -->
     <section id="why" class="white-section">
@@ -262,7 +262,8 @@
           </section>
         );
       };
-
+      
+      document.getElementById('hero-section').innerHTML = "";
       ReactDOM.render(<HeroSection />, document.getElementById('hero-section'));
 
     </script>
